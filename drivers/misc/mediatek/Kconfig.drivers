@@ -1763,6 +1763,10 @@ config MTK_LENS_GAF008AF_SUPPORT
 config MTK_CAM_CAL_GT24C32A_SUPPORT
        bool "GT24C32A EEPROM Driver"
        default n
+       
+config MTK_CAM_CAL_A5142OTP_SUPPORT
+       bool "A5142OTP EEPROM Driver"
+       default n
 
 config MTK_CAM_CAL_BRCC064GWZ_3_SUPPORT
        bool "BRCC064GWZ_3 EEPROM Driver"
