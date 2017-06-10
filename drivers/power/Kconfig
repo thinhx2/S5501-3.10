@@ -8,6 +8,20 @@ menuconfig POWER_SUPPLY
 
 if POWER_SUPPLY
 
+config FORCE_FAST_CHARGE
+	bool "Increase input current limit to 900mA when charging via USB"
+	default y
+	help
+	  A simple sysfs interface to increase input current limit to
+	  900mA when charging via USB.
+
+config CONFIG_FORCEFASTCHARGE_CONTROL
+	bool "Force Fast Charge Control to charge rate"
+	default y
+	help
+	  A tool for mediatek devices for controling the charge rate
+	  of FORCE_FAST_CHARGE by flar2.
+
 config POWER_SUPPLY_DEBUG
 	bool "Power supply debug"
 	help

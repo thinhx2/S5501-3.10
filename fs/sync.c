@@ -371,5 +371,5 @@ out:
 SYSCALL_DEFINE4(sync_file_range2, int, fd, unsigned int, flags,
 				 loff_t, offset, loff_t, nbytes)
 {
-	return sys_sync_file_range(fd, offset, nbytes, flags);
+  	return sys_sync_file_range(fd, offset, nbytes, flags);
 }
